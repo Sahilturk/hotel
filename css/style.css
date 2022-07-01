@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    position: relative;
+  }
+nav:after{
+  content: '';
+  clear: both;
+  display: table;
+}
+.bgimg {
+  content: "";
+  position: absolute;
+  width: 58%;
+  height: 86%;
+  background-image: url(../img/hotel.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+nav .logo img{
+  width: 200px;
+  height: 55px;
+  margin-top: 15px;
+}
+nav .logo a{
+  float: left;
+  font-family: ;
+  color: rgb(0, 0, 0);
+  line-height: 70px;
+  padding-left: 60px;
+}
+nav ul{
+  float: right;
+  margin-right: 40px;
+  list-style: none;
+  position: relative;
+  margin-top: 15px;
+}
+nav ul li{
+  float: left;
+  display: inline-block;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: black;
+  line-height: 70px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 8px 15px;
+
+}
+nav ul li a:hover{
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.show,.icon,input{
+  display: none;
+}
+.fa-plus{
+  font-size: 15px;
+  margin-left: 40px;
+}
+nav ul button{
+  margin-top: 15px;
+}
+@media all and (max-width: 1110px) {
+  nav .logo img{
+    width: 170px;
+    height: 45px;
+    margin-left: -50px;
+
+  }
+  nav ul li a{
+    font-size: 18px;
+    font-weight: 300;
+  }
+}
+
+@media all and (max-width: 968px) {
+  .bgimg {
+    width: 100%;
+    height: 50%;
+  }
+  nav ul{
+    margin-right: 0px;
+    float: left;
+  }
+  nav .logo{
+    padding-left: 30px;
+    width: 100%;
+  }
+  nav .logo img{
+    width: 150px;
+    height: 40px;
+    margin-left: -100px;
+  }
+  .show + a, ul{
+    display: none;
+  }
+  nav ul li,nav ul ul li{
+    display: block;
+    width: 100%;
+  }
+  nav ul li a:hover{
+    box-shadow: none;
+  }
+  .show{
+    display: block;
+    color: white;
+    font-size: 18px;
+    padding: 0 20px;
+    line-height: 70px;
+    cursor: pointer;
+  }
+  .show:hover{
+    color: cyan;
+  }
+  .icon{
+    display: block;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    line-height: 70px;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  
+  [id^=btn]:checked + ul{
+    display: block;
+  }
+  span.cancel:before{
+    content: '\f00d';
+  }
+}
+@media all and (max-width: 968px) {
+
+}
+
+@media all and (max-width: 450px){
+  .bgimg{
+    width: 450px;
+  height: 300px;
+  }
+  nav .logo img{
+    width: 100px;
+    height: 27px;
+    margin-left: -100px;
+  }
+}
+
+
